@@ -5,5 +5,5 @@ python:
 install:
   - "pip install pytest"
   - "pip install requests"
-script: python -m pytest search_test.py
+script: python -m pytest gitremote/test/search_test.py
 
