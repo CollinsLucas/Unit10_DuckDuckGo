@@ -19,6 +19,6 @@ def test_president_search(us_presidents):
     topics_text = []
 
     for topic in topics_list:
-        topics_list.append(topic['Text'])
+        topics_text.append(topic['Text'])
 
     assert us_presidents in str(topics_text)
