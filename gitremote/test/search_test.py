@@ -16,5 +16,9 @@ def test_president_search(us_presidents):
 
     topics_list = data["RelatedTopics"]
 
-    for i in range(len(topics_list)):
-        assert us_presidents in topics_list
+    topics_text = []
+
+    for topic in topics_list:
+        topics_list.append(topic['Text'])
+
+    assert us_presidents in str(topics_text)
