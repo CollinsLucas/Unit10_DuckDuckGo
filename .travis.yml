@@ -4,6 +4,6 @@ python:
   - "nightly"
 install:
   - "pip install pytest"
-  - "pip install -r requirements.txt"
-script: python -m pytest gitremote
+  - "pip install requests"
+script: python -m pytest search_test.py
 
